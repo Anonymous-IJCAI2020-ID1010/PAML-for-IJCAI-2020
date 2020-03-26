@@ -1,0 +1,45 @@
+{
+  "exp_name": "PNC_Test_exp_memory_1",
+  "agent": "PNC_TestAgent",
+  "mode": "train",
+
+  "cuda": true,
+  "gpu_device":3,
+  "seed": 1,
+
+  "some_model_attribute": 0,
+
+  "sz_resize": 256,
+  "sz_crop": 256,
+
+  "threshold" : 0.20,
+  "scale": 128,
+
+  "batch_size": 32,
+  "test_batch_size": 1,
+
+  "learning_rate": 1e-4,
+  "momentum": 0.9,
+  "weight_decay": 0.00005,
+
+  "max_epoch": 200,
+
+  "valid_every": 1,
+
+  "loss_mode" : "111",
+
+  "checkpoint_file": "checkpoint.pth.tar",
+
+  "data_loader": "Birds",
+  "num_workers": 0,
+  "pin_memory": true,
+  "async_loading": true,
+  "log_interval": 10,
+
+  "data_mode": "imgs",
+  "use_sampler": false,
+  "train_classes": 100,
+  "test_classes": 100,
+  "train_folder": "/media/disk2/dataset/CUB_200_2011/CUB_200_2011/retrieval_task/train",
+  "test_folder": "/media/disk2/dataset/CUB_200_2011/CUB_200_2011/retrieval_task/test"
+}
